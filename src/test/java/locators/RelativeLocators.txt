@@ -1,0 +1,7 @@
+Selenium 4 introduces new ways of finding web elements.
+
+Above - locates an element above a given element
+Below - locates an element below a given element
+Right - locates an element to the right of a given element
+Left - locates an element to the left of a given element
+Near - locates an element within 50 pixels of a given element

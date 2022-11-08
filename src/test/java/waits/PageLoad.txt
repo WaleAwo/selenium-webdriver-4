@@ -1,0 +1,20 @@
+Page Load Strategy
+
+NORMAL
+- Wait for the entire page to be loaded.
+- Selenium WebDriver waits until the load event fire is returned.
+
+EAGER
+- Wait until the initial HTML document has been completely loaded and parsed, and discards the loading of stylesheets, images, and sub-frames.
+- Selenium WebDriver waits until DOMContentLoaded event fire is returned.
+
+NONE
+- Selenium WebDriver only waits until the initial page is downloaded.
+
+*** Syntax Example ***
+
+ChromeOptions chromeOptions = new ChromeOptions();
+chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+driver = new ChromeDriver(chromeOptions);
+
+*** Syntax Example ***
