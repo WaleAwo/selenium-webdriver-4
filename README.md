@@ -1,4 +1,4 @@
-# Selenium Webdriver 4
+# Selenium WebDriver 4
 
 Exploring some of the new changes in Selenium Webdriver 4.
 
