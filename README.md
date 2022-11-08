@@ -1,6 +1,6 @@
 # Selenium WebDriver 4
 
-Exploring some of the new changes in Selenium Webdriver 4.
+Exploring some of the new changes in Selenium WebDriver 4.
 
 ## Features
 
