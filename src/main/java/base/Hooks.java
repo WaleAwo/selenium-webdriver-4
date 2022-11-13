@@ -52,10 +52,10 @@ public class Hooks {
                 break;
 
             case "grid":
-                ChromeOptions grid_ChromeOptions = new ChromeOptions();
-                grid_ChromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-                grid_ChromeOptions.addArguments("start-maximized");
-                driver = new RemoteWebDriver(new URL("http://localhost:4444/"), grid_ChromeOptions);
+                ChromeOptions gridChromeOptions = new ChromeOptions();
+                gridChromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+                gridChromeOptions.addArguments("start-maximized");
+                driver = new RemoteWebDriver(new URL("http://localhost:4444/"), gridChromeOptions);
                 break;
 
         }
