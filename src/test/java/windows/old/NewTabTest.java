@@ -15,7 +15,7 @@ import java.util.ArrayList;
 public class NewTabTest extends Hooks {
 
     @Test
-    public void HandlingTabs() throws InterruptedException {
+    public void handlingTabs() throws InterruptedException {
         driver.get("http://www.webdriveruniversity.com/Page-Object-Model/index.html");
 
         // open link in new tab

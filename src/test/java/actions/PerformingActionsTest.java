@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class PerformingActionsTest extends Hooks {
 
     @Test
-    public void PerformingActions() {
+    public void performingActions() {
         driver.get("https://webdriveruniversity.com/Actions/index.html");
 
         // Click & Hold
