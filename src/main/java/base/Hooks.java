@@ -24,8 +24,9 @@ public class Hooks {
     @BeforeTest
     public void setup() throws IOException {
         Properties properties = new Properties();
-        FileInputStream file = new FileInputStream(System.getProperty("user.dir") + "/src/main/java/properties/config.properties");
-        properties.load(file);
+        try (FileInputStream file = new FileInputStream(System.getProperty("user.dir") + "/src/main/java/properties/config.properties")) {
+            properties.load(file);
+        }
 
         String browserType = properties.getProperty("browser").toLowerCase().trim();
 
@@ -57,6 +58,9 @@ public class Hooks {
                 gridChromeOptions.addArguments("start-maximized");
                 driver = new RemoteWebDriver(new URL("http://localhost:4444/"), gridChromeOptions);
                 break;
+
+            default:
+                System.out.println("Unknown browser type");
 
         }
         driver.manage().window().maximize();
