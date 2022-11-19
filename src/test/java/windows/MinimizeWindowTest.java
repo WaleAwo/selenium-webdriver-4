@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class MinimizeWindowTest extends Hooks {
 
     @Test
-    public void minimizeWindow() throws InterruptedException {
+    public void minimizeWindow() {
 
         // Minimize window
         driver.get("https://webdriveruniversity.com/");

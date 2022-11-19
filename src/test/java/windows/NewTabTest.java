@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import java.time.Duration;
 import java.util.ArrayList;
 
-@SuppressWarnings("unused")
+
 public class NewTabTest extends Hooks {
 
     @Test
@@ -44,7 +44,7 @@ public class NewTabTest extends Hooks {
 
         // Switch to original tab and close the other tab
         driver.switchTo().window(originalWindow);
-        driver.switchTo().window(tabs.get(tabs.size() -1));
+        driver.switchTo().window(tabs.get(tabs.size() - 1));
         driver.close();
 
         // Switch back to first tab
